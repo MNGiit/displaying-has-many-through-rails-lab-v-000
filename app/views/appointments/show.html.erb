@@ -2,8 +2,3 @@
 <p>Find me in app/views/appointments/show.html.erb</p>
 <%= link_to @appointment.doctor.name, doctor_path(@appointment.doctor) %>
 <%= link_to @appointment.patient.name, patient_path(@appointment.patient)%>
-
-
-  it "should not have an index page" do
-    expect {visit('/appointments')}.to raise_error(ActionController::RoutingError)
-  end
